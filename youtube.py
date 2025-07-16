@@ -99,5 +99,5 @@ if __name__ == "__main__":
     df_tratado = tratar_dados(df_original)
     salvar_dados(df_tratado)
     print(df_tratado.head())
-    print(f"\nInfo do DataFrame tratado:")
+    print("\nInfo do DataFrame tratado:")
     print(df_tratado.info())
