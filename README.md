@@ -1,6 +1,6 @@
 [![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
 
-### :brazil: [Portuguese version](https://github.com/FelipeLRoll/previsao-inadimplencia/blob/main/readmePortugues.md)
+### :brazil: [Portuguese version](https://github.com/FelipeLRoll/Teste-Youtube/blob/main/readmePortuguese.md)
 
 # YouTube Performance Analysis Project
 
