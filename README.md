@@ -1,130 +1,131 @@
 [![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
 
-### :brazil: [Versão em Português](https://github.com/FelipeLRoll/previsao-inadimplencia/blob/main/readmePortugues.md)
+### :brazil: [Portuguese version](https://github.com/FelipeLRoll/previsao-inadimplencia/blob/main/readmePortugues.md)
 
-# Projeto de Análise de Performance no YouTube
+# YouTube Performance Analysis Project
 
-## Motivação
+## Motivation
 
-Entender o que faz um vídeo performar bem no YouTube é essencial para criadores de conteúdo que desejam crescer suas audiências, melhorar engajamento e monetização. Ao analisar dados históricos dos vídeos, é possível identificar padrões e fatores que influenciam visualizações, duração média de exibição e taxa de cliques.
+Understanding what makes a video perform well on YouTube is essential for content creators who want to grow their audiences, improve engagement, and monetize their content. By analyzing historical video data, it is possible to identify patterns and factors that influence views, average viewing time, and click-through rates.
 
-## Objetivos
+## Objectives
 
-Este projeto tem como principal objetivo realizar uma análise de dados sobre a performance de vídeos em um canal do YouTube, utilizando técnicas de análise exploratória e visualização de dados para gerar insights que orientem decisões estratégicas.
+The main objective of this project is to analyze data on the performance of videos on a YouTube channel, using exploratory analysis and data visualization techniques to generate insights that guide strategic decisions.
 
-- Investigar os fatores que influenciam o desempenho dos vídeos
+- Investigate the factors that influence video performance
 
-- Identificar padrões
+- Identify patterns
 
-- Descobrir quais temas geram maior engajamento
+- Discover which topics generate the most engagement
 
-## Etapas do Projeto
+## Project Stages
 
-- Carregamento e análise inicial dos dados: Inspeção do dataset exportado do YouTube Studio
+- Data loading and initial analysis: Inspection of the dataset exported from YouTube Studio
 
-- Limpeza e tratamento dos dados: Conversão de colunas, tratamento de valores nulos, padronizações
+- Data cleaning and processing: Column conversion, handling of null values, standardization
 
-- Engenharia de atributos: Criação de novas variáveis
+- Attribute engineering: Creation of new variables
 
-- Análise exploratória (EDA): Avaliação estatística e identificação de tendências e outliers
+- Exploratory data analysis (EDA): Statistical evaluation and identification of trends and outliers
 
-- Visualização com gráficos: Criação de barplots, scatterplots e wordclouds para facilitar a interpretação dos dados
+- Visualization with graphs: Creation of bar plots, scatter plots, and word clouds to facilitate data interpretation
 
-- Geração de insights: Com base nas análises, identificar ações que possam melhorar a performance do canal
+- Generation of insights: Based on the analyses, identify actions that can improve the channel's performance
 
-# Dicionário de Dados - YouTube Analytics
+# Data Dictionary - YouTube Analytics
 
-## Descrição Geral
+## General Description
 
-Este dataset contém dados de análise de performance de vídeos de um canal do YouTube, focado em conteúdo de Counter-Strike 2 (CS2), incluindo tutoriais de granadas e smokes para diferentes mapas.
+This dataset contains performance analysis data for videos from a YouTube channel focused on Counter-Strike 2 (CS2) content, including tutorials on grenades and smokes for different maps.
 
-## Estrutura dos Dados
+## Data Structure
 
-### Informações Gerais
+### General Information
 
-- **Fonte**: YouTube Analytics
-- **Período**: 2013-2025
-- **Número de registros**: 11 vídeos
-- **Formato**: CSV
+- **Source**: YouTube Analytics
+- **Period**: 2013-2025
+- **Number of records**: 11 videos
+- **Format**: CSV
 
 ---
 
-## Variáveis
+## Variables
 
-| Variável | Tipo | Descrição | Exemplo | Observações |
+| Variable | Type | Description | Example | Notes |
 |----------|------|-----------|---------|-------------|
-| **Content** | String | ID único do vídeo no YouTube | `PU50erzKEjk` | Identificador único gerado pelo YouTube |
-| **Video title** | String | Título do vídeo | `CS2 - Smokes Anubis` | Título público do vídeo |
-| **Video publish time** | String | Data de publicação | `Feb 25, 2025` | Formato: MMM DD, YYYY |
-| **Duration** | Integer | Duração do vídeo em segundos | `257` | Duração total do vídeo |
-| **Average view duration** | String | Tempo médio de visualização | `0:00:42` | Formato: H:MM:SS |
-| **Unique viewers** | Integer | Número de visualizadores únicos | - | Dados não disponíveis no dataset |
-| **Stayed to watch (%)** | Float | Percentual de retenção | - | Dados não disponíveis no dataset |
-| **Average views per viewer** | Float | Média de visualizações por pessoa | - | Dados não disponíveis no dataset |
-| **New viewers** | Integer | Novos visualizadores | - | Dados não disponíveis no dataset |
-| **Returning viewers** | Integer | Visualizadores recorrentes | - | Dados não disponíveis no dataset |
-| **Views** | Integer | Total de visualizações | `52` | Número total de views |
-| **Watch time (hours)** | Float | Tempo total assistido | `0.6107` | Soma de todo tempo assistido |
-| **Subscribers** | Integer | Inscritos ganhos | `2` | Novos inscritos através do vídeo |
-| **Impressions** | Integer | Impressões do vídeo | `1572` | Quantas vezes o vídeo foi mostrado |
-| **Impressions click-through rate (%)** | Float | Taxa de cliques nas impressões | `1.15` | Percentual de cliques sobre impressões |
+| **Content** | String | Unique YouTube video ID | `PU50erzKEjk` | Unique identifier generated by YouTube |
+| **Video title** | String | Video title | `CS2 - Smokes Anubis` | Public title of the video |
+| **Video publish time** | String | Publication date | `Feb 25, 2025` | Format: MMM DD, YYYY |
+| **Duration** | Integer | Video duration in seconds | `257` | Total video duration |
+| **Average view duration** | String | Average viewing time | `0:00:42` | Format: H:MM:SS |
+| **Unique viewers** | Integer | Number of unique viewers | - | Data not available in the dataset |
+| **Stayed to watch (%)** | Float | Retention percentage | - | Data not available in the dataset |
+| **Average views per viewer** | Float | Average views per person | - | Data not available in the dataset |
+| **New viewers** | Integer | New viewers | - | Data not available in the dataset |
+| **Returning viewers** | Integer | Returning viewers | - | Data not available in the dataset |
+| **Views** | Integer | Total views | `52` | Total number of views |
+| **Watch time (hours)** | Float | Total watch time | `0.6107` | Sum of all watch time |
+| **Subscribers** | Integer | Subscribers gained | `2` | New subscribers through the video |
+| **Impressions** | Integer | Video impressions | `1572` | How many times the video was shown |
+| **Impressions click-through rate (%)** | Float | Click-through rate on impressions | `1.15` | Percentage of clicks on impressions |
 
 ---
 
-# Resultados
+# Results
 
-### **Análise Descritiva**
+### **Descriptive Analysis**
 
-O que aconteceu?
+What happened?
 
-- Foram analisados vídeos do meu canal do Youtube entre as datas 16/10/2013 até 21/03/2025
-- Os vídeos tiveram uma mediana de 3 visualizações
-- A mediana do tempo de duração dos vídeos é de 3 minutos e 55 segundos
-- Vídeos com palavras como "CS2" e "Smokes" se saíram melhor na maioria das métricas
-- Vídeos mais longos tendem a ter uma média maior de tempo de visualização
-- Quanto mais pessoas assistem um vídeo, menor o tempo médio de visualização
-- Vídeos com mais visualizações, tendem a ter mais impressões
-- O número de visualizações e o número de inscritos ganhos ao longo do tempo seguem a mesma tendência
-- Vídeos tiveram mais sucesso após o ano de 2023 
-- Títulos com "Granadas" ao invés de "Smokes" geram menos visualizações
-- Os dois vídeos do Mapa "Anubis" teve o maior número de visualizações no CS2 comparado ao vídeo do CS:GO ("Smokes Anubis")
-
----
-
-### **Análise Diagnóstica**
-
-Por que aconteceu?
-
-- Vídeos com palavras-chave como "CS2" e "Smokes" obtiveram mais visualizações, provavelmente porque o jogo "CS2" lançou recentemente e muitos jogadores procuram vídeos de como fazer "Smokes" no jogo
-- Mesmo motivo fez que os vídeos lançados após 2023 tiveram engajamento maior
-- Vídeos com mais visualizações tendem a ter um CTR mais real, pois aparecem para um numero maior de pessoas e portanto, têm mais chances de serem clicados
-- Quanto mais pessoas assistem um vídeo, menor o tempo médio de visualização, isso se dá devido ao fato que principalmente neste tipo de video, os usuários tendem a apenas assistir uma parte específica do video (uma "Smoke" específica), e não a todo o conteúdo
-- A curva do número de visualizações e do número de inscritos ganhos ao longo do tempo seguem uma curva muito parecida pois quanto mais pessoas assistem um vídeo, maior a chance de ganhar inscritos 
-- Mapa "Anubis" teve o maior número de visualizações pelo fato de ser um mapa relativamente novo, gerando um interesse maior. Principalmente os vídeos do CS2, que obtiveram um número de visualizações muito maior que a versão do CS:GO
+- Videos from my YouTube channel were analyzed between October 16, 2013, and March 21, 2025
+- The videos had a median of 3 views
+- The median duration of the videos is 3 minutes and 55 seconds
+- Videos with words such as “CS2” and “Smokes” performed better in most metrics
+- Longer videos tend to have a higher average viewing time
+- The more people watch a video, the shorter the average viewing time
+- Videos with more views tend to have more impressions
+- The number of views and the number of subscribers gained over time follow the same trend
+- Videos were more successful after 2023
+- Titles with “Grenades” instead of “Smokes” generate fewer views
+- The two videos of the “Anubis” map had the highest number of views in CS2 compared to the CS:GO video (“Smokes Anubis”)
 
 ---
 
-### **Análise Preditiva**
+### **Diagnostic Analysis**
 
-O que vai acontecer?
+Why did this happen?
 
-- Provavelmente, se continuar postando vídeos com as palavras "CS2" e "Smokes", o canal continuará a crescer
-- Mesma coisa para vídeos feitos entre 2023-2025, pois o jogo ainda é relevante e muitas pessoas procuram por este tipo de vídeo, porém, chegará um ponto onde isso não será mais tão relevante porque as pessoas assistiram este tipo de vídeo e já aprenderam o que precisam
-- Continuar fazendo vídeos de mapas novos e relevantes poderá gerar um interesse maior nos vídeos
+- Videos with keywords such as “CS2” and “Smokes” got more views, probably because the game ‘CS2’ was recently released and many players are looking for videos on how to do “Smokes” in the game
+- The same reason meant that videos released after 2023 had higher engagement
+- Videos with more views tend to have a more realistic CTR, as they appear to a larger number of people and are therefore more likely to be clicked on.
+- The more people watch a video, the shorter the average viewing time. This is because, especially with this type of video, users tend to watch only a specific part of the video (a specific “Smoke”) rather than the entire content.
+- The curve of the number of views and the number of subscribers gained over time follow a very similar curve because the more people watch a video, the greater the chance of gaining subscribers 
+- The “Anubis” map had the highest number of views because it is a relatively new map, generating greater interest. This was especially true for CS2 videos, which received a much higher number of views than the CS:GO version.
 
 ---
 
-### **Análise Prescritiva**
+### **Predictive Analysis**
 
-O que devemos fazer?
+What will happen?
 
-- Postar vídeos com as palavras-chave que dão maior número de visualizações
-- Postar vídeos com mapas novos lançados a fim de gerar interesse maior no vídeo pelo fato de muitos jogadores quererem aprender sobre o mapa o mais rápido possível
-- Postar enquanto o CS2 estiver relevante
+- If the channel continues to post videos with the words “CS2” and “Smokes,” it will likely continue to grow.
+- The same goes for videos made between 2023-2025, as the game is still relevant and many people are looking for this type of video. However, there will come a point where this will no longer be as relevant because people have watched this type of video and have already learned what they need to know.
+- Continuing to make videos of new and relevant maps may generate greater interest in the videos.
+
+---
+
+### **Prescriptive Analysis**
+
+What should we do?
+
+- Post videos with keywords that generate the highest number of views
+- Post videos with newly released maps in order to generate greater interest in the video, as many players want to learn about the map as quickly as possible
+- Post while CS2 is still relevant
 
 # Developed by: 
 
   * [Felipe Roll - Linkedin](https://www.linkedin.com/in/felipe-roll)
   * [Felipe Roll - Github](https://github.com/FelipeLRoll)
   * [Felipe Roll - Gmail](felipelroll@gmail.com)
-  
+
+
